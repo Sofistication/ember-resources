@@ -10,7 +10,6 @@ export default Ember.Component.extend({
     },
 
     delete () {
-      console.log('Sending Action');
       return this.sendAction('delete', this.get('item'));
     }
   },
