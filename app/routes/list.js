@@ -6,9 +6,14 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    toggleItemDone(item) {
+    toggleItemDone (item) {
       item.toggleProperty('done');
       item.save();
+    },
+
+    deleteItem (item) {
+      console.log('hello roto');
+      item.destroyRecord();
     }
   },
 });
