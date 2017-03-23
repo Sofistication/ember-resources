@@ -4,4 +4,6 @@
 <button {{action 'edit'}} class="btn btn-primary btn-xs">Edit</button>
 {{#if list.isEmpty}}
   <button {{action 'delete'}} class="btn btn-warning btn-xs">Delet This</button>
+{{else}}
+  <p>Non-empty lists cannot be Delet</p>
 {{/if}}
